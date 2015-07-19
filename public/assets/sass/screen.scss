@@ -1,0 +1,390 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+/* @import "compass/reset"; */
+@import "compass/css3";
+@import "colors";
+
+html{
+	background-color: rgb(255,255,255);
+	/*background-image: url(../img/bg/carlossang_black_bg.png);*/
+	font-family: "Helvetica Neue", serif;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+input, textarea{
+	font-family: "Helvetica Neue", serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 100%;
+	height: 75px;
+	background-color: rgba(255,255,255,1);
+	border-bottom: 1px solid $purple;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	clear: both;
+	-webkit-box-shadow: 0px 10px 50px 20px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 50px 20px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 50px 20px rgba(0,0,0,0.75);
+
+	.logo{
+		margin: 0 5px;
+		width: 200px;
+
+		img:first-child{
+			width: 200px;
+			margin: 5px;
+		}
+	}
+	.right{
+		float: right;
+		margin: 5px 5px 0 0;
+
+		button{
+			width: 70px;
+			height: 30px;
+			color: $white;
+			border: 1px solid $purple;
+			background-color: $lPurple;
+			cursor: pointer;
+		}
+
+		button:not(.active):hover{
+			border: 1px solid $lPurple;
+			background-color: $purple;
+		}
+
+		button.active{
+			background-color: $purple;
+			cursor: default;
+		}
+	}
+}
+
+.flash{
+	margin: 50px 0 0;
+	padding: 10px 0;
+
+	p{
+		color: $dWhite;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+.error{
+	background-color: rgba(255,0,0,.5);
+}
+
+.success{
+	background-color: rgba(0,255,0,.5);
+}
+
+.container{
+	
+	color: #161616;
+	text-align: center;
+
+	.top{
+		margin: 40px auto 0;
+		height: 35px;
+		width: 100%;
+		overflow: hidden;
+		overflow-x: auto;
+		border-bottom: 1px solid $purple;
+
+		.audio{
+			width: 100%;
+			
+			.controls{
+				position: fixed;
+				width: 100%;
+				height: 35px;
+				text-align: left;
+				border-bottom: solid 1px $purple;
+				background-color: $white;
+
+				.slider{
+					width: 100%;
+					height: 5px;
+					cursor: pointer;
+					background-color: $lPurple; 
+
+					.played{
+						position: absolute;
+						width: 0%;
+						height: 5px;
+						display: inline-block;
+						background-color: $purple;
+						border-right: 1px solid $white;
+					}
+
+					p{
+						color: $white;
+						position: absolute;
+						margin: 6px 10px;
+					}
+				}
+
+				.playpause{
+					width: 100px;
+					height: 30px;
+					border-right: solid 1px $lPurple;
+					display: inline-block;
+					background-color: $purple;
+					text-align: left;
+					cursor: pointer;
+
+					p{
+						color: $white;
+						position: absolute;
+						margin: 2px 45px;
+						font-size: 20px;
+					}
+				}
+
+				.info{
+					position: absolute;
+					width: 100%;
+					height: 30px;
+					border-top: solid 1px $purple;
+					display: inline-block;
+					
+					background-color: $purple; 
+
+					p{
+						color: $white;
+						position: absolute;
+						margin: 6px 10px;
+					}
+				}
+			}
+		}
+	}
+
+	.poster{
+		width: 100%;
+		margin: 0 0 -3px;
+
+		img{
+			width: 100%;
+			margin: 0;
+		}
+	}
+
+	.center{
+		background-color: $lPurple;
+		-webkit-box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.75);
+
+		iframe{
+			margin: 70px 0;
+		}
+	}
+
+	.bottom{
+		background-color: rgba(255,255,255,.5);
+
+		.contact{
+		
+			form{
+				width: 300px;
+				margin: 0 auto;
+				padding: 50px 0;
+
+				input:not(.submit){
+					margin: 2px;
+				}
+
+				textarea{
+					resize: none;
+				}
+
+				input:not(.submit), textarea{
+					width: 280px;
+					background-color: rgba(0,0,0,0);
+					border: 2px inset $purple;
+					color: $dWhite;
+					padding: 5px;
+				}
+
+				.submit{
+					width: 295px;
+					height: 50px;
+					background-color: $purple;
+					border: 5px outset $purple;
+					margin: 2px;
+					cursor: pointer;
+					color: $white;
+				}
+
+				.submit:hover{
+					background-color: $lPurple;
+					border: 5px outset $lPurple;
+					color: $white;
+				}
+
+				.submit:active{
+					background-color: $lPurple;
+					border: 5px inset $lPurple;
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+footer{	
+	width: 100%;
+	background-color: $lPurple;
+	padding: 10px 0;
+	-webkit-box-shadow: 0px 16px 50px 20px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 16px 50px 20px rgba(0,0,0,0.75);
+	box-shadow: 0px 16px 50px 20px rgba(0,0,0,0.75);
+	/*display: inline;
+	text-align: center;*/
+
+	.copyright{
+		position: fixed;
+		bottom: 0;
+		color: #eeeeee;
+		font-size: 12px;
+		margin: 5px;
+	}
+
+	.social_links{
+		width: 100%;
+		text-align: center;
+
+		.social{
+			width: 50px;
+			height: 50px;
+			background-color: rgba(0,0,0,1);
+			/*border: 2px inset $blue;*/
+			border-radius: 10px;
+			display: inline-block;
+			margin: 10px 20px 10px 20px;
+			overflow: hidden;
+
+			/*-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);*/
+
+			img{
+				width: 50px;
+
+				/*-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);*/
+			}
+		}
+
+		.gh{
+			background-color: $white;
+		}
+	}
+}
+
+.inline{
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------------------------*/
+/* Media Queries */
+/*--------------------------------------------------------------------------------*/
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+.container{
+	.poster{
+		width: 100%;
+		margin: 0 0 -5px;
+		overflow: hidden;
+
+		img{
+			width: 767px;
+			// margin: 0 0 0 -300px;
+
+		}
+	}
+}
+
+}
+
+@media (max-width: 640px) {
+
+.container{
+	.center iframe{
+		width: 100%;
+	}
+}
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+header{
+	
+	.right button{
+		font-size: 12px;
+		padding: 2px;
+		width: 47px
+
+		
+	}
+}
+
+.container{
+
+	h2{
+		font-size: 20px;
+	}
+
+	h3{
+		font-size: 15px;
+	}
+
+	input:not(.submit), textarea{
+		width: 90%;
+	}
+
+	.bottom .contact form input.submit{
+		width: 98%;
+	}
+}
+
+}

@@ -1,0 +1,17 @@
+# Multiple Environment config, set this to development, staging or production
+# SetEnv FUEL_ENV production
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    RewriteBase /sites/lauragguzman/public/
+
+    RewriteRule ^(/)?$ index.php/$1 [L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule ^(.*)$ index.php/$1 [L]
+
+#    SetEnv FUEL_ENV production
+</IfModule>

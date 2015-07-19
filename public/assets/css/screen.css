@@ -1,0 +1,365 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* @import "compass/reset"; */
+/* line 10, ../sass/screen.scss */
+html {
+  background-color: white;
+  /*background-image: url(../img/bg/carlossang_black_bg.png);*/
+  font-family: "Helvetica Neue", serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 18, ../sass/screen.scss */
+input, textarea {
+  font-family: "Helvetica Neue", serif;
+  font-size: 16px;
+}
+
+/* line 23, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* line 27, ../sass/screen.scss */
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+/* line 32, ../sass/screen.scss */
+header {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border-bottom: 1px solid #d800d8;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  clear: both;
+  -webkit-box-shadow: 0px 10px 50px 20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 50px 20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 50px 20px rgba(0, 0, 0, 0.75);
+}
+/* line 45, ../sass/screen.scss */
+header .logo {
+  margin: 0 5px;
+  width: 200px;
+}
+/* line 49, ../sass/screen.scss */
+header .logo img:first-child {
+  width: 200px;
+  margin: 5px;
+}
+/* line 54, ../sass/screen.scss */
+header .right {
+  float: right;
+  margin: 5px 5px 0 0;
+}
+/* line 58, ../sass/screen.scss */
+header .right button {
+  width: 70px;
+  height: 30px;
+  color: white;
+  border: 1px solid #d800d8;
+  background-color: #eb7feb;
+  cursor: pointer;
+}
+/* line 67, ../sass/screen.scss */
+header .right button:not(.active):hover {
+  border: 1px solid #eb7feb;
+  background-color: #d800d8;
+}
+/* line 72, ../sass/screen.scss */
+header .right button.active {
+  background-color: #d800d8;
+  cursor: default;
+}
+
+/* line 79, ../sass/screen.scss */
+.flash {
+  margin: 50px 0 0;
+  padding: 10px 0;
+}
+/* line 83, ../sass/screen.scss */
+.flash p {
+  color: #eeeeee;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 90, ../sass/screen.scss */
+.error {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* line 94, ../sass/screen.scss */
+.success {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+/* line 98, ../sass/screen.scss */
+.container {
+  color: #161616;
+  text-align: center;
+  min-height: 325px;
+  margin: 40px 0 0;
+}
+/* line 103, ../sass/screen.scss */
+.container .top {
+  margin: 40px auto 0;
+  height: 35px;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  border-bottom: 1px solid #d800d8;
+}
+/* line 111, ../sass/screen.scss */
+.container .top .audio {
+  width: 100%;
+}
+/* line 114, ../sass/screen.scss */
+.container .top .audio .controls {
+  position: fixed;
+  width: 100%;
+  height: 35px;
+  text-align: left;
+  border-bottom: solid 1px #d800d8;
+  background-color: white;
+}
+/* line 122, ../sass/screen.scss */
+.container .top .audio .controls .slider {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background-color: #eb7feb;
+}
+/* line 128, ../sass/screen.scss */
+.container .top .audio .controls .slider .played {
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  display: inline-block;
+  background-color: #d800d8;
+  border-right: 1px solid white;
+}
+/* line 137, ../sass/screen.scss */
+.container .top .audio .controls .slider p {
+  color: white;
+  position: absolute;
+  margin: 6px 10px;
+}
+/* line 144, ../sass/screen.scss */
+.container .top .audio .controls .playpause {
+  width: 100px;
+  height: 30px;
+  border-right: solid 1px #eb7feb;
+  display: inline-block;
+  background-color: #d800d8;
+  text-align: left;
+  cursor: pointer;
+}
+/* line 153, ../sass/screen.scss */
+.container .top .audio .controls .playpause p {
+  color: white;
+  position: absolute;
+  margin: 2px 45px;
+  font-size: 20px;
+}
+/* line 161, ../sass/screen.scss */
+.container .top .audio .controls .info {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  border-top: solid 1px #d800d8;
+  display: inline-block;
+  background-color: #d800d8;
+}
+/* line 170, ../sass/screen.scss */
+.container .top .audio .controls .info p {
+  color: white;
+  position: absolute;
+  margin: 6px 10px;
+}
+/* line 180, ../sass/screen.scss */
+.container .poster {
+  width: 100%;
+  margin: 0 0 -3px;
+}
+/* line 184, ../sass/screen.scss */
+.container .poster img {
+  width: 100%;
+  margin: 0;
+}
+/* line 190, ../sass/screen.scss */
+.container .center {
+  /*background-color: #eb7feb;*/
+  background-color: #ffffff;
+  border-top: 1px solid #d800d8
+  -webkit-box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.75);
+}
+/* line 196, ../sass/screen.scss */
+.container .center iframe {
+  margin: 70px 0;
+}
+/* line 201, ../sass/screen.scss */
+.container .bottom {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 206, ../sass/screen.scss */
+.container .bottom .contact form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+/* line 211, ../sass/screen.scss */
+.container .bottom .contact form input:not(.submit) {
+  margin: 2px;
+}
+/* line 215, ../sass/screen.scss */
+.container .bottom .contact form textarea {
+  resize: none;
+}
+/* line 219, ../sass/screen.scss */
+.container .bottom .contact form input:not(.submit), .container .bottom .contact form textarea {
+  width: 280px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px inset #d800d8;
+  color: #eeeeee;
+  padding: 5px;
+}
+/* line 227, ../sass/screen.scss */
+.container .bottom .contact form .submit {
+  width: 295px;
+  height: 50px;
+  background-color: #d800d8;
+  border: 5px outset #d800d8;
+  margin: 2px;
+  cursor: pointer;
+  color: white;
+}
+/* line 237, ../sass/screen.scss */
+.container .bottom .contact form .submit:hover {
+  background-color: #eb7feb;
+  border: 5px outset #eb7feb;
+  color: white;
+}
+/* line 243, ../sass/screen.scss */
+.container .bottom .contact form .submit:active {
+  background-color: #eb7feb;
+  border: 5px inset #eb7feb;
+  color: white;
+}
+
+/* line 253, ../sass/screen.scss */
+footer {
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #d800d8;
+  padding: 10px 0;
+  /*display: inline;
+  text-align: center;*/
+}
+/* line 263, ../sass/screen.scss */
+footer .copyright {
+  position: fixed;
+  bottom: 0;
+  color: #eeeeee;
+  font-size: 12px;
+  margin: 5px;
+}
+/* line 271, ../sass/screen.scss */
+footer .social_links {
+  width: 100%;
+  text-align: center;
+}
+/* line 275, ../sass/screen.scss */
+footer .social_links .social {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  /*border: 2px inset $blue;*/
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px 20px 10px 20px;
+  overflow: hidden;
+  /*-webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);*/
+}
+/* line 291, ../sass/screen.scss */
+footer .social_links .social img {
+  width: 50px;
+  /*-webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);*/
+}
+/* line 302, ../sass/screen.scss */
+footer .social_links .gh {
+  background-color: white;
+}
+
+/* line 308, ../sass/screen.scss */
+.inline {
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------------------------*/
+/* Media Queries */
+/*--------------------------------------------------------------------------------*/
+/* Large desktop */
+/* Portrait tablet to landscape and desktop */
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /* line 332, ../sass/screen.scss */
+  .container .poster {
+    width: 100%;
+    margin: 0 0 -5px;
+    overflow: hidden;
+  }
+  /* line 337, ../sass/screen.scss */
+  .container .poster img {
+    width: 767px;
+  }
+}
+@media (max-width: 640px) {
+  /* line 350, ../sass/screen.scss */
+  .container .center iframe {
+    width: 100%;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 362, ../sass/screen.scss */
+  header .right button {
+    font-size: 12px;
+    padding: 2px;
+    width: 47px;
+  }
+
+  /* line 373, ../sass/screen.scss */
+  .container h2 {
+    font-size: 20px;
+  }
+  /* line 377, ../sass/screen.scss */
+  .container h3 {
+    font-size: 15px;
+  }
+  /* line 381, ../sass/screen.scss */
+  .container input:not(.submit), .container textarea {
+    width: 90%;
+  }
+  /* line 385, ../sass/screen.scss */
+  .container .bottom .contact form input.submit {
+    width: 98%;
+  }
+}

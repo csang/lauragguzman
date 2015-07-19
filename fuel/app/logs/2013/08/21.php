@@ -1,0 +1,11 @@
+<?php defined('COREPATH') or exit('No direct script access allowed'); ?>
+
+ERROR - 2013-08-21 00:23:44 --> Parsing Error - syntax error, unexpected '=', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /Applications/MAMP/htdocs/full_sail/FS-FinalProject/fuel/app/classes/controller/site.php on line 10
+ERROR - 2013-08-21 00:23:45 --> Parsing Error - syntax error, unexpected '=', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /Applications/MAMP/htdocs/full_sail/FS-FinalProject/fuel/app/classes/controller/site.php on line 10
+ERROR - 2013-08-21 00:25:30 --> Error - Class 'Conroller_Template' not found in /Applications/MAMP/htdocs/full_sail/FS-FinalProject/fuel/app/classes/controller/app.php on line 4
+ERROR - 2013-08-21 01:41:23 --> Error - Error Processing Request in /Applications/MAMP/htdocs/full_sail/FS-FinalProject/fuel/app/classes/controller/site.php on line 13
+ERROR - 2013-08-21 02:04:27 --> Parsing Error - syntax error, unexpected ''(:segment)'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /Applications/MAMP/htdocs/full_sail/FS-FinalProject/fuel/app/config/routes.php on line 8
+ERROR - 2013-08-21 02:07:00 --> Error - Error Processing Request make, model, 1991 in /Applications/MAMP/htdocs/full_sail/FS-FinalProject/fuel/app/classes/controller/car.php on line 10
+ERROR - 2013-08-21 02:12:03 --> Error - Class 'Model_User' not found in /Applications/MAMP/htdocs/full_sail/FS-FinalProject/fuel/app/classes/controller/profile.php on line 16
+ERROR - 2013-08-21 02:14:57 --> Error - SQLSTATE[42S22]: Column not found: 1054 Unknown column 't0.last_login' in 'field list' with query: "SELECT `t0`.`id` AS `t0_c0`, `t0`.`username` AS `t0_c1`, `t0`.`email` AS `t0_c2`, `t0`.`password` AS `t0_c3`, `t0`.`last_login` AS `t0_c4`, `t0`.`created_at` AS `t0_c5`, `t0`.`updated_at` AS `t0_c6` FROM `users` AS `t0` WHERE `t0`.`username` = 'user' LIMIT 1" in /Applications/MAMP/htdocs/full_sail/FS-FinalProject/fuel/core/classes/database/pdo/connection.php on line 208
+ERROR - 2013-08-21 02:17:00 --> Error - Class 'PageNotFoundException' not found in /Applications/MAMP/htdocs/full_sail/FS-FinalProject/fuel/app/classes/controller/profile.php on line 20
